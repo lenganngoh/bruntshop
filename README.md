@@ -1,4 +1,4 @@
-# bruntshop
+This project is developed with the following specifications:
 # Language
 Kotlin
 # Architecture
