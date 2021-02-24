@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BruntShop</string>
+    <string name="str_shop">Shop</string>
+    <string name="str_products">Products</string>
+    <string name="str_add">Add</string>
+    <string name="str_cart">Cart</string>
+    <string name="str_buy_now">Buy Now</string>
+    <string name="str_checkout">Checkout</string>
+    <string name="str_your_name">Your name</string>
+    <string name="str_your_email">Your email</string>
+    <string name="str_checkout_name_hint">e.g Jane Doe</string>
+    <string name="str_checkout_email_hint">e.g jane@company.co</string>
+    <string name="str_terms_and_conditions">I agree to the terms and conditions</string>
+    <string name="str_order_confirmation">Order Confirmation</string>
+    <string name="str_return_products">Return to Products</string>
+    <string name="str_your_order_has_been_processed">Your order has been processed</string>
+</resources>

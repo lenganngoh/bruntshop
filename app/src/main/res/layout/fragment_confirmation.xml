@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/str_order_confirmation"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_rect_black"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:id="@+id/bgNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_confirmation_card_header" />
+
+        <FrameLayout
+            android:id="@+id/contDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_confirmation_card_bottom"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/str_your_order_has_been_processed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_title"
+                app:autoSizeMaxTextSize="@dimen/text_title"
+                app:autoSizeMinTextSize="@dimen/text_accent"
+                app:autoSizeStepGranularity="0.5sp"
+                app:autoSizeTextType="uniform" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtOrderID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="50dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_confirmation_order_id" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_confirmation_star_base"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_confirmation_star"
+                android:padding="22dp"
+                android:src="@drawable/ic_star" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnReturn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_confirmation_return"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:gravity="center"
+        android:text="@string/str_return_products"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_sub_title"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
